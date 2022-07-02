@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
-//Bu sınıf tüm gerekli path'leri verdiğimiz ChromeDriver'a bağlı sağladığımız fonksiyonu barındıran sınıf
+//Bu sınıf tüm gerekli path'leri verdiğimiz ChromeDriver'a bağlantı sağladığımız fonksiyonu barındıran sınıf
 public class Connection {
 
     public static WebDriver driver;
@@ -21,7 +21,7 @@ public class Connection {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        //get methodu ile ilgili url'nin yönlendirilmesi yapılıyor.
+        //get methodu ile ilgili url'nin yönlendirilmesi yapılıyor
         driver.get(url);
 
         return driver;

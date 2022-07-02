@@ -32,7 +32,7 @@ public class SearchTest {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='searchBox']")));
 
-        //Aradığımız elementi bulupi assert yardımıyla varlığını kontrol ediyoruz
+        //Aradığımız elementi bulup assert yardımıyla varlığını kontrol ediyoruz
         //Eğer elementi doğru bulabilirsek assert bize passed değer döndürecek
         WebElement Search_box = driver.findElement(By.xpath("//*[@id=\"searchBox\"]"));
         assertNotNull(Search_box);
